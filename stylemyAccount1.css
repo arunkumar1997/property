@@ -615,7 +615,7 @@ select {
   display: block;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 200) {
 .header {
     width: 100%;
   }
