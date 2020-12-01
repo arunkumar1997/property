@@ -26,12 +26,3 @@ $('.pro-btn').click(function(){
 $('nav ul li').click(function(){
   $(this).addCLass("active").siblings().removeClass("active");
 });
-
-
-var icons = document.getElementsByTagName('i');
-for (var i = 0; i < icons.length; i++) {
-  icons[i].addEventListener('click',function() {
-    this.classList.toggle('active');
-  });
-}
-
