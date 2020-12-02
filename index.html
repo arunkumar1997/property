@@ -72,7 +72,7 @@
                   </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-4">
                   <div class="input-group form-container">
                       <input class="form-control"
                              type="search"
@@ -80,7 +80,7 @@
                              aria-label="Search"
                              autocomplete="off" />
                       <span class="input-group-btn">
-                          <button class="btn btn-outline-success btn-search"
+                          <button type="button"class="btn btn-outline-success btn-search"
                                   type="submit">
                               <i class="fas fa-search mr-1"></i>Search
                           </button>
@@ -90,10 +90,7 @@
 
               
               <div class="nav-item dropdown">
-                  <button class="nav-link dropdown btn-search btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                          type="submit">
-                      Sheltie's Plan
-                  </button>
+                  <button type="button" class="btn btn-info">Sheltie's Plan</button>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Option A</a>
                       <a class="dropdown-item" href="#">Option B</a>
@@ -111,10 +108,10 @@
                       aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item mr-4 login ">
-                          <a class="nav-link " href="#">Sign up </a>
+                          <a class="nav-link " href="#" >Sign up </a>
                       </li>
                       <li class="nav-item mr-4 login  ">
                           <a class="nav-link" href="#">Sign in </a>
@@ -128,20 +125,22 @@
 
 
       <!---Left Sidebar start ---------->
-      <div class="d-flex" style=" margin: 0 20px;  margin-top:8%;">
+      <div class="d-flex" style=" margin: 0 20px;  margin-top:6%;">
       <div style=" margin: 0;">
       <nav class="sidebar" style=" border: solid #2ecab6;border-radius: 5px; padding: 0; margin-top:10px!important; display: inline-block;" >
+        <div id="accordion">
         <div class="text sorting" style="margin-top:0;">
-          <a  class="filters" href="#">Filters&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a  class="filters" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Filters&nbsp;&nbsp;&nbsp;&nbsp;</a>
 
-          <a href="#" class="sortby ">Sort By&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+          <a href="#" class="sortby" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Sort By&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
 
         <div style="margin:0; margin:15px 0; text-align: center; font-size: 20px;">Sheltie's Shelter<input type="checkbox" id="checkbox1" style="margin: 10px; margin-top: 4px;"><hr></div>
-
+<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" aria-expanded="true">
         <ul> 
 
           <li>
-            <a href="#" class="cat-btn">Categories
+            
+            <a class="cat-btn" style="text-decoration: none;">Categories
                <span class="fas fa-caret-down first"></span>
             </a>
             <ul class="cat-show">
@@ -153,7 +152,7 @@
 
           </li>
           <li>
-            <a href="#" class="bhk-btn">BHK type
+            <a class="bhk-btn" style="text-decoration: none;">BHK type
                 <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="bhk-show">
@@ -165,7 +164,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="pg-btn">PG Sharing Type
+            <a class="pg-btn" style="text-decoration: none;">PG Sharing Type
               <span class="fas fa-caret-down third"></span>
             </a>
             <ul class="pg-show">
@@ -176,7 +175,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="floor-btn">Floor Preference
+            <a class="floor-btn" style="text-decoration: none;">Floor Preference
             <span class="fas fa-caret-down fourth"></span>
             </a>
             <ul class="floor-show">
@@ -188,7 +187,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="fur-btn">Furnishing
+            <a class="fur-btn" style="text-decoration: none;">Furnishing
               <span class="fas fa-caret-down fifth"></span>
             </a>
             <ul class="fur-show">
@@ -198,7 +197,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="pro-btn">Property Age
+            <a class="pro-btn" style="text-decoration: none;">Property Age
               <span class="fas fa-caret-down sixth"></span>
             </a>
             <ul class="pro-show">
@@ -208,7 +207,24 @@
               <li>Above 15<input type="checkbox" class="check"></li>
             </ul>
           </li>
-        </ul>
+              </div>
+    </ul>
+    <div id="collapseTwo" class="collapse"  data-parent="#accordion" aria-expanded="false">
+      <div class="checkboxc">
+  <label>Price-Lowest to Highest<input type="checkbox" value=""></label>
+</div>
+<div class="checkboxc">
+  <label>Price-Highest to Lowest<input type="checkbox" value=""></label>
+</div>
+<div class="checkboxc">
+  <label>Customer Ratings<input type="checkbox"></label>
+</div>
+<div class="checkboxc">
+  <label>Option 4<input type="checkbox"></label>
+</div>
+
+
+</div>
       </nav>
       </div>
 
@@ -233,7 +249,9 @@
       <li><a href="#">Lajpat Nagar</a></li>
     </ul>
   </div>
- 
+  
+
+
                           <div style="margin:5px 10px; background-color: white;" class="upper d-flex justify-content-between ">
                             <div  class="image">
                               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -272,7 +290,11 @@
                           <button style=" border : none;background-color: #32a898; color: white; margin: 10px; margin-left: 20px;" type="button" class="btn btn-primary">View more details</button>
                           <!-- <button style=" border : none;background-color: #32a898; color: white;margin: 10px;" type="button" class="btn btn-primary">Get owner details</button>
  -->                          <button style=" border : none;background-color: #32a898; color: white;margin: 10px; margin-left: 10px;" type="button" class="btn btn-primary">Book now </button>
-                          <i  class="fa fa-info-circle" style="margin-top: 18px;" data-toggle="modal" data-target="#myModal2"></i>
+                        <i  class="fa fa-info-circle" style="margin-top: 18px;" data-toggle="modal" data-target="#myModal2"></i>
+                        <div class="icon">
+
+</div>
+
                       </div>
                             </div>
                             <div  style="margin:0; margin-top: 10px;margin-right: 10px;" class="pp2 " >
@@ -283,29 +305,29 @@
                               <i class="fa fa-map-marker-alt" aria-hidden="true"></i>     Nearby<br>
                       <div>
                      <div class="dropdown-container1">
-                          <label >Category :</label>
+                          <label >Category:</label>
                       <select name="category" id="category">
-                      <option value="none">PG/Hostel</option>
-                      <option value="none">Apartment</option>
+                      <option value="none">PG/Hostel        </option>
+                      <option value="none">Apartment        </option>
                       <option value="none">Independent House</option>
-                      <option value="none">Gated Community</option>
+                      <option value="none">Gated Community  </option>
 
                     </select>
                   </div>
                       <div class="dropdown-container2">
-                      <label>BHK Type :</label>
+                      <label>BHK Type:</label>
                       <select name="type" id="type">
-                      <option value="none">1 RK</option>
-                      <option value="none">1 BHK</option>
-                      <option value="none">2 BHK</option>
-                      <option value="none">3 BHK</option>
-                      <option value="none">4 BHK</option>
-                      <option value="none">5 BHK</option>
+                      <option value="none">1 RK </option>
+                      <option value="none">1 BHK </option>
+                      <option value="none">2 BHK </option>
+                      <option value="none">3 BHK </option>
+                      <option value="none">4 BHK  </option>
+                      <option value="none">5 BHK  </option>
                     </select>
                   </div>
 <br>
                         <div class="dropdown-container3">
-                      <label>PG Sharing Type :</label>
+                      <label>PG Sharing:</label>
                     <select name="sharing" id="sharing">
                       <option value="none">Single</option>
                       <option value="none">Twin</option>
@@ -314,7 +336,7 @@
                     </select></div>
 
                         <div class="dropdown-container4">
-                      <label>Floor Preference :</label>
+                      <label>Floor Preference:</label>
                     <select name="preference" id="preference">
                       <option value="none">1st Floor</option>
                       <option value="none">2nd Floor</option>
@@ -328,7 +350,7 @@
                                <br>
 
                          <div class="dropdown-container5">
-                      <label>Furnishing :</label>
+                      <label>Furnishing:</label>
                     <select name="furnish" id="furnish">
                       <option value="none">Non-furnished</option>
                       <option value="none">Semi-furnished</option>
@@ -339,7 +361,7 @@
                   </div>
 
                         <div class="dropdown-container6">
-                      <label>Property Age :</label>
+                      <label>Property Age:</label>
                     <select  name="age" id="age">
                       <option value="none">Option1 </option>
                       <option value="none">Option2</option>
@@ -349,7 +371,7 @@
 <br>
 
                      <div class="dropdown-container7">
-                      <label>Preference :</label>
+                      <label>Preference:</label>
                     <select name="opt1" id="opt1">
                       <option value="none">Male only </option>
                       <option value="none">Female Only</option>
@@ -360,7 +382,7 @@
                   </div>
 
                       <div class="dropdown-container8">
-                        <label>Deposit :</label>
+                        <label>Deposit:</label>
                     <select name="opt2" id="opt2">
                       <option value="none">1 Month Deposit</option>
                       <option value="none">2 Month Deposit</option>
