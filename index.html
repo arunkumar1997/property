@@ -29,7 +29,7 @@
       href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css"
       rel="stylesheet"
     />
-    <link href="stylehomepage.css" rel="stylesheet" />
+    <link href="stylemyAccount1.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
@@ -488,7 +488,7 @@
                            <!-- <a href="#"> <i class="fa fa-info-circle" data-toggle="modal" data-target="#myModal"></i></a> -->
                             </div>
                         </div>
-                      </div><br>
+                      </div>
 
             </div><!---col-8 end------->
 
@@ -501,26 +501,8 @@
 </div><!-----genaral card div end-------------->
 <!-- card 2 start
  -->
-
-      
-       <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 2px; background-color: white ">
-                  <div class=" d-flex justify-content-around">
-                  <div style="margin: 5px;text-align: center;">Couples Privacy<br><input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
-                  <div style="margin: 5px;text-align: center;">Family Zoned <br><input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
-
-                  <div style="margin: 5px;text-align: center;">Male Only <br><input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
-
-                  <div style="margin: 5px;text-align: center;">Female Only<br><input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
-                </div>
-              </div>
-              <div >
-                <ul class="breadcrumb">
-                  <li><a href="#">India</a></li>
-                  <li><a href="#">Delhi</a></li>
-                  <li><a href="#">Lajpat Nagar</a></li>
-                </ul>
-              </div>
-              <div style="margin:5px 10px; background-color: white; border: 1px solid grey;" class="upper">
+ 
+    <div style="margin:5px 10px; background-color: white; border: 1px solid grey;" class="upper">
                  <div class="container-fluid">
                  <div class="row">
                  <div class="col-lg-4 col-md-4 col-sm-4 pt-3">
@@ -572,31 +554,31 @@
                        <div  style="margin:0; margin-top: 15px;margin-right: 15px;" class="pp2 " >
 
                                   Property Name
-                                  <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart"><i class="fa fa-heart  heartinactive" id="heart" ></i></button>
-                                 
-                                   <style>
+                                  <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart-a"><i class="fa fa-heart  heartinactive-a" id="heart-a" ></i></button>
+                                  <style>
                                     .heartactive{
                                       color: red !important;
                                       font-size:23px;
                                     }
-                                    .heartinactive{
+                                    .heartinactive-a{
                                       color:#9fa5a5 !important;
                                       font-size:19px;
                                     }
                                   </style>
                                   <script>
-                                  var t = document.getElementById("heart");
-                                  document.getElementById("btn-heart").addEventListener("click",changecolor);
+                                  var v = document.getElementById("heart-a");
+                                  document.getElementById("btn-heart-a").addEventListener("click",changecolor);
                                   function changecolor(){
-                                    if(t.classList.contains("heartinactive")){
-                                      document.getElementById("heart").classList.add("heartactive");
-                                      document.getElementById("heart").classList.remove("heartinactive");
+                                    if(v.classList.contains("heartinactive-a")){
+                                      document.getElementById("heart-a").classList.add("heartactive");
+                                      document.getElementById("heart-a").classList.remove("heartinactive-a");
                                     }
                                     else{
-                                      document.getElementById("heart").classList.add("heartinactive");
-                                      document.getElementById("heart").classList.remove("heartactive");
+                                      document.getElementById("heart-a").classList.add("heartinactive-a");
+                                      document.getElementById("heart-a").classList.remove("heartactive");
                                     }
                                   }
+                                  
 
                                   </script>
                                   <hr/>
@@ -606,8 +588,9 @@
                          <li style="list-style-type: none;"><div class="dropdown-container1">
                               <label >Category :</label>
                           <select name="category" id="category">
+                            <option value="none">Apartment</option>
                           <option value="none">PG/Hostel</option>
-                          <option value="none">Apartment</option>
+                          
                           <option value="none">Independent House</option>
                           <option value="none">Gated Community</option>
 
@@ -616,6 +599,7 @@
                             <li style="list-style-type: none;"><div class="dropdown-container2">
                               <label>PG Sharing Type :</label>
                         <select name="sharing" id="sharing">
+                          <option value="none">  N/A</option>
                           <option value="none">Single</option>
                           <option value="none">Twin</option>
                           <option value="none">Tripple</option>
@@ -627,6 +611,7 @@
                         <li style="list-style-type: none;"><div class="dropdown-container3">
                           <label>Preference :</label>
                         <select name="opt1" id="opt1">
+                          <option value="none">Female Only</option>
                           <option value="none">Male only </option>
                           <option value="none">Female Only</option>
                           <option value="none">Couple Privacy</option>
@@ -638,9 +623,10 @@
                             <li style="list-style-type: none;"><div class="dropdown-container4">
                               <label>Deposit :</label>
                         <select name="opt2" id="opt2">
+                          <option value="none">No Security</option>
                           <option value="none">1 Month</option>
                           <option value="none">2 Month</option>
-                          <option value="none">No Security</option>
+                          
                           
 
                         </select>
@@ -652,8 +638,9 @@
                          <li style="list-style-type: none;"><div class="dropdown-container5">
                             <label>Furnishing :</label>
                           <select name="furnish" id="furnish">
-                            <option value="none">Non</option>
                             <option value="none">Semi</option>
+                            <option value="none">Non</option>
+                            
                             <option value="none">Fully</option>
 
 
@@ -666,9 +653,10 @@
                       <div class="dropdown-container7">
                         <label >BHK Type :</label>
                             <select name="type" id="type">
+                              <option value="none">2 BHK</option>
                             <option value="none">1 RK</option>
                             <option value="none">1 BHK</option>
-                            <option value="none">2 BHK</option>
+                            
                             <option value="none">3 BHK</option>
                             <option value="none">4 BHK</option>
                             <option value="none">5 BHK</option>
@@ -678,10 +666,11 @@
                        <li style="list-style-type: none;"><div class="dropdown-container8">
                         <label >Floor Preference :</label>
                         <select name="preference" id="preference">
+                          <option value="none">4th</option>
                           <option value="none">1st</option>
                           <option value="none">2nd</option>
                           <option value="none">3rd</option>
-                          <option value="none">4th</option>
+                          
                           <option value="none">5th</option>
                           <option value="none">6th</option>
 
@@ -691,8 +680,9 @@
                        <li style="list-style-type: none;"> <div class="dropdown-container6">
                       <label >Property Age :</label>
                         <select  name="age" id="age">
-                          <option value="none">Below 5</option>
                           <option value="none">5-10</option>
+                          <option value="none">Below 5</option>
+                          
                           <option value="none">10-15</option>
                           <option value="none">Above 15</option>
                         </select>
@@ -712,7 +702,7 @@
                            <!-- <a href="#"> <i class="fa fa-info-circle" data-toggle="modal" data-target="#myModal"></i></a> -->
                             </div>
                         </div>
-                      </div><br>
+                      </div>
 
             </div><!---col-8 end------->
 
@@ -722,6 +712,74 @@
 </div><!-----container fluid end-------------->
 
 
+</div><!-----genaral card div end-------------->
+   
+  </div>
+</div>
+</div>
+      <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+    <div class="checkbox" >
+      <label><input type="checkbox" value="" style="margin: 10px;">Single Sharing - ₹5000 </label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="" style="margin: 10px;">Twin Sharing - ₹6000</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="" style="margin: 10px;">Triple Sharing - ₹8000</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="" style="margin: 10px;">Quadraple Sharing - ₹10000</label>
+    </div>
+
+  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Save</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+   <div class="modal-content">
+        
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      <div class="modal-body">
+        <h5>We only take bookings for Verified Properties</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+    </div><!--------middle end--->
+     <!-- pagination start -->
+      <nav aria-label="Page navigation example" style="margin-top: 15px;">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>   
 <!-- pagination end    -->
 </div><!--------col-7 end--->
 <!-- card 2 end -->
