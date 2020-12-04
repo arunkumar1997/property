@@ -8,105 +8,9 @@ body {
   background: #f1f3f6;
 }
 
-/*.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.login a:hover{
-  text-decoration: underline;
-  background-color: white !important;
-}
-.choose > a{
-  color: black !important;
-  font-size: 18px;
-}
-.choose a:hover{
-  background-color: #2ecab6;
-}
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-/*.main > div{
-  align-items: center;
-}
-.center{
-  color: white;
-  margin-top: 5%;
-  margin-left: 3%;
-}
-.left{
-  float: left;
-}
-/*Middle Checkbox*/
-/*.box{
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding: 10px 30px;
-    width: 40%;
-    height: 80%;
-    box-sizing: border-box;    
-}
-.innerbox{
-margin: 12px 12px;
-padding: 3px;
-font-size: 16px;
-}
-/*Right Sidebar*/
-/*@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-.generalcard{
-  margin: 5px 0px;
-  padding: 10px 10px;
-  border: 1px solid grey;
-  font-size: 18px;
-  float:left;
-  width: 100%;
-}
-.image img {
-  height: 320px !important;
-  width: 350px !important;
-  /*object-fit: cover;*/
-  padding: 10px;
-}
-/**/
-/*
-/*.lower2{
-  float: right;
-}*/
-/*.lower, .lower2{
-  float: left;
-}
+
+
+
 /*--------------------------navbar------------------------------------------*/
 .navbar-brand{
   font-size: 20px;
@@ -128,6 +32,9 @@ font-size: 16px;
   border-radius: 0;
   color: white;
 }
+.login a:hover{
+  text-decoration: underline;
+}
 
 /*-----------------------navbar end------------------------------------------->*/
 /*------------------------all media queries-----------------------------*/
@@ -137,7 +44,10 @@ font-size: 16px;
     padding-left: 0!important;
   }
   .dropdown{
-    margin-left: -20px!important
+    margin-left: -20px!important;
+  }
+  .dropdown-menu{
+    min-width: 25px !important;
   }
   .navbar-brand{
   font-size: 18px;
@@ -145,23 +55,22 @@ font-size: 16px;
    .navbar-brand p{
   font-size: 12px;  
 }
-  input[type="search"]{
-    font-size: 10px;
-  }
-  .btn.btn-search{
-      font-size: 10px;
-      padding-top: 17px!important;
-   padding-bottom: 18px!important;
-  } 
+  
 }
 @media (max-width: 386px)and (min-width: 381px)  {
    .dropdown{
-    margin-left: -25px!important
+    margin-left: -25px!important;
+  }
+   .dropdown-menu{
+    min-width: 25px !important;
   }
 }
 @media (max-width: 381px){
   .dropdown{
-    margin-left: -35px!important
+    margin-left: -35px!important;
+  }
+   .dropdown-menu{
+    min-width: 25px !important;
   }
 }
 
@@ -172,7 +81,7 @@ font-size: 16px;
 
 }
 .sidebar ul li{
-  line-height: 60px;
+  line-height: 47px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-left: 10px;
 }
@@ -204,7 +113,7 @@ font-size: 16px;
 }
 .sidebar ul ul li
 {
-  line-height: 42px;
+  line-height: 32px;
   border-bottom: none;
 
 }
@@ -254,22 +163,32 @@ font-size: 16px;
   transform: translateY(-50%) rotate(-180deg);
   
 }
+/*.sidebar a {
+  line-height: 20px !important;
+}*/
 .sortc{
   font-size: 16px;
-  margin-bottom: 20px;
+  /*margin-bottom: 5px;*/
   margin-left: 15px;
+
 }
-.checkc{
-  float: right;
-  margin-top: 8px;
-  margin-right: 15px;
-  margin-left: 15px;
+
+.checkboxc li:hover{
+    background: #d5f6f2!important;
+  color: #17c3ad !important;
 
 }
 .check{
   margin-right: 15px; 
   margin-top: 14px; 
   float: right;
+}
+.checkc{
+ margin-right: 15px; 
+  margin-top: 10px; 
+  float: right;
+}
+
 }
 .sidebar .text{
   color: black;
@@ -281,13 +200,10 @@ font-size: 16px;
 .filters{
   border: none !important; 
 color: white !important;
+
   
 }
 
-/*.collapse,.checkboxc{
-color: black;
-  font-size:20px;
-}*/
 
 .sorting{
   background-color: #2ecab6 !important;
@@ -304,7 +220,12 @@ color: black;
   line-height: 65px;
   letter-spacing: 1px;
 }
+.vl {
+  border-left: 6px solid white;
+  height: 50px;
+}
 /*---------------------------left part end---------------------------------------------*/
+/*---------------------------middle part start---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
 ul.breadcrumb {
   padding: 10px 10px;
@@ -339,6 +260,24 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
 
 }
+/*heart*/
+/*.heartactive{
+  color: red !important;
+  font-size:23px;
+}
+.heartinactive{
+  color:#9fa5a5 !important;
+  font-size:19px;
+}
+.heartactive1{
+  color: red !important;
+  font-size:23px;
+}
+.heartinactive1{
+  color:#9fa5a5 !important;
+  font-size:19px;
+}
+*/
 .neg a:hover{
   text-decoration: underline;
 }
@@ -356,7 +295,7 @@ ul.breadcrumb li a:hover {
 .fa-info-circle{
   float:right;
   color: #2ecab6 !important;
-  margin: 5px;
+  /*margin: 5px;*/
   font-size: 20px;
 }
 
@@ -370,19 +309,19 @@ ul.breadcrumb li a:hover {
   right: 5px;
 }
 
-.dropdown-container1,.dropdown-container3,.dropdown-container5,.dropdown-container7{
+/*.dropdown-container1,.dropdown-container2,.dropdown-container3,.dropdown-container4{
   float: left;
   margin-left: 10px;
 }
-
-.dropdown-container2,.dropdown-container4,.dropdown-container6,.dropdown-container8{
-  float:left;
+.dropdown-container5,.dropdown-container6,.dropdown-container7,.dropdown-container8{
+  float:right;
   margin-left: 10px;
-}
+}*/
 
 .generalcard,{
   font-size: 15px;
 }
+
 
 /*select {
     -webkit-appearance: none;
@@ -395,11 +334,49 @@ ul.breadcrumb li a:hover {
      margin: 10px;
      padding: 2px;
 }*/
+/* apply CSS to the select tag of  
+         .dropdown-container div*/
+
+.dropdown-container1 select,
+.dropdown-container2 select,
+.dropdown-container3 select,
+.dropdown-container4 select,
+.dropdown-container5 select,
+.dropdown-container6 select,
+.dropdown-container7 select,
+.dropdown-container8 select
+{
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+
+/* for IE10 */
+.dropdown-container1 select::-ms-expand,
+.dropdown-container2 select::-ms-expand,
+.dropdown-container3 select::-ms-expand,
+.dropdown-container4 select::-ms-expand,
+.dropdown-container5 select::-ms-expand,
+.dropdown-container6 select::-ms-expand,
+.dropdown-container7 select::-ms-expand,
+.dropdown-container8 select::-ms-expand
+ {
+  display: none;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+
+/*---------------------------middle part end---------------------------------------------*/
 
 /*---------------------------middle part end---------------------------------------------*/
 /*---------------------------right part start---------------------------------------------*/
-.col .features li .ion-checkmark{
-    color: black;
+.features li .ion-checkmark{
+    color: black !important;
+}
+.fas , .fa-check{
+  color: black !important;
 }
 .title {
 /*  position: relative;*/
@@ -415,24 +392,29 @@ ul.breadcrumb li a:hover {
 }
 .features li {
   border-top: 1px solid #d2d7e2;
-  padding: 10px 5%;
+  padding: 0.7em 5%;
   font-weight: bold;
+  font-size: 12px;
 }
- .features li:nth-child(even) {
-  /*background: rgba(0, 0, 0, 0.08);*/
-}
+ /*.features li:nth-child(even) {
+  /*background: rgba(0, 0, 0, 0.08);}*/
 .features i {
   margin-right: 8px;
-  opacity: 0.4;
+  opacity: 0.6;
 }
- .row .col .features li {
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+.fa-check{
+  margin-right: 5px;
+  
 }
-@media only screen and (max-width: 767px) {
-.features {
-    margin-top: 0;
+
+@media only screen and (max-width: 575px) {
+.diss {
+   visibility: hidden;
+      
   }
 }
+/*---------------------------right part end---------------------------------------------*/
 /*---------------------------right part end---------------------------------------------*/
 /*---------------------------footer start---------------------------------------------*/
 
