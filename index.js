@@ -27,9 +27,4 @@ $('nav ul li').click(function(){
   $(this).addCLass("active").siblings().removeClass("active");
 });
 
-@media (max-width: 768px) 
-{
-  .collapse.in {
-        display: none;
-    }
-}
+
