@@ -26,5 +26,3 @@ $('.pro-btn').click(function(){
 $('nav ul li').click(function(){
   $(this).addCLass("active").siblings().removeClass("active");
 });
-
-
