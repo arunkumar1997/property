@@ -27,11 +27,9 @@ $('nav ul li').click(function(){
   $(this).addCLass("active").siblings().removeClass("active");
 });
 
-if (screen.width > 500) {
-  var accordion = document.getElementsByClassName('accordion');
-  Object.keys(accordion).forEach(el => {
-    accordion[el].click();
-  });
-
-
+@media (max-width: 768px) 
+{
+  .collapse.in {
+        display: none;
+    }
 }
