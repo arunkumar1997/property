@@ -121,6 +121,23 @@ font-size: 16px;
 
 /*-----------------------navbar end------------------------------------------->*/
 /*------------------------all media queries-----------------------------*/
+/* check box mv */
+@media screen and (max-width: 465px) {
+  .checkbox{
+    font-size: 11px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Category option mv */
+@media only screen and (min-width: 360px) and (max-width: 767px){
+  select{
+    font-size: 0.7em;
+  }
+}
+
+
 
 @media (max-width: 576px){
   .navbar-brand{
@@ -136,8 +153,8 @@ font-size: 16px;
   font-size: 12px;  
 }
 .filters, .sortby{
-                                        height: 25px !important;
-                                       }
+height: 25px !important;
+ }
   /*input[type="search"]{
     font-size: 10px;
   }
@@ -279,7 +296,6 @@ font-size: 16px;
   float: right;
 }
 
-}
 .sidebar .text{
   color: black;
   font-size: 20px;
@@ -357,21 +373,18 @@ color: white !important;
 /*---------------------------middle part start---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
 ul.breadcrumb {
-  /*padding: 10px 10px;*/
+  padding: 10px 10px;
   list-style: none;
   background-color: #eee;
-  height: 20px !important;
   /*float:left;*/
   /*margin: 5px;*/
 }
 ul.breadcrumb li {
   display: inline;
   font-size: 15px;
-  margin-top: 0 !important;
-
 }
 ul.breadcrumb li + li:before {
-  /*padding: 5px;*/
+  padding: 5px;
   color: black;
   content: " > ";
 }
@@ -386,7 +399,7 @@ ul.breadcrumb li a:hover {
 .generalcard p {
   margin-bottom: 0;
   text-align: right;
- /* margin-top: -25px;*/
+  margin-top: -25px;
 }
 .generalcard p a {
   text-decoration: none;
@@ -475,7 +488,7 @@ ul.breadcrumb li a:hover {
   border-top: 1px solid #d2d7e2;
   padding: 0.7em 5%;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
 }
  /*.features li:nth-child(even) {
   /*background: rgba(0, 0, 0, 0.08);}*/
@@ -562,4 +575,3 @@ footer a {
   display: block;
 }
 }
-  /*---------------------------mob  view end---------------------------------------------*/
