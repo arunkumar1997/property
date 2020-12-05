@@ -480,6 +480,13 @@ footer a {
 @media (max-width: 760px){
 .mobview{
   display: block;
+  
 }
+
+@media (max-width: 760px) 
+{
+  .collapse.in {
+        display: none;
+    }
 }
   /*---------------------------mob  view end---------------------------------------------*/
