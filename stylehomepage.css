@@ -498,6 +498,19 @@ ul.breadcrumb li a:hover {
   
 }
 
+/* negotiation and price */
+
+.negoo{
+  margin-bottom:1px;
+  position: relative;
+  color: red;
+  cursor: pointer; 
+  font-weight: bolder; 
+  font-size: large;
+  text-align: center; 
+  width: 10%;
+}
+
 @media only screen and (max-width: 575px) {
 .diss {
    visibility: hidden;
