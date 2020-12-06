@@ -154,7 +154,8 @@ height: 25px !important;
   
 }
 div.scroll {
-  overflow: scroll;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 
