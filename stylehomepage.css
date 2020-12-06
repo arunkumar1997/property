@@ -153,13 +153,24 @@ height: 25px !important;
   color: #17c3ad !important;
   
 }
+div.scroll {
+  overflow: scroll;
+}
+
+
+.ogender-show li:hover,
+.meal-show li:hover,
+.ostay-show li:hover,
+.amn-show li:hover,
+.gated-show li:hover,
+.sup-show li:hover,
+.bal-show li:hover,
 .pro-show li:hover,
 .fur-show li:hover,
 .floor-show li:hover,
 .pg-show li:hover,
 .bhk-show li:hover,
-.cat-show
- li:hover,
+.cat-show li:hover,
 .checkboxc > label:hover
 {
   background: #d5f6f2!important;
