@@ -8,6 +8,9 @@ body {
   background: #f1f3f6;
 }
 
+input[type=checkbox] ,a{
+cursor: pointer;
+}
 
 
 
@@ -89,6 +92,56 @@ height: 25px !important;
   .filters, .sortby{
                                         height: 25px !important;
                                        }
+}
+
+.prem-filter .pre .newbtn{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none; 
+  font-size:9px;
+  padding: 2px 5px; 
+  position: absolute;
+  top: 10% ; 
+  right: 15% ;
+  padding-bottom: 0;
+}
+/*-----------------------navbar end------------------------------------------->*/
+/*------------------------all media queries-----------------------------*/
+/* check box mv */
+@media  (max-width: 465px) {
+  .checkbox{
+    font-size: 11px;
+   
+  }
+}
+
+/* Category option mv */
+@media (min-width: 360px) and (max-width: 767px){
+  select{ 
+    font-size: 0.7em;
+  }
+}
+/* Negotiation and price */
+.price-nego{ 
+  display: flex;
+  justify-content: flex-end ;}
+
+@media   (min-width: 360px) and (max-width: 767px){
+  .negoo{
+    margin-right: 5px;
+    width: 20% !important;
+  }
+  .price-nego{
+    display: flex;
+    justify-content: flex-start !important;}
+  }
+@media (max-width: 576px){
+  .prem-filter .pre .newbtn{
+    right: 30% ;
+    top: 10%  ;
+  }
 }
 
 /*---------------------------left part start---------------------------------------------*/
@@ -386,7 +439,27 @@ ul.breadcrumb li a:hover {
   font-size: 15px;
 }
 
+/* negotiation button */
+.negoo:hover{
+  font-weight: bolder;
+  color:#4b8a82 !important;
+  transition: all 150ms ease 0s;
+  
+ 
+}
 
+/* tooltip */
+.tooltip-inner {
+  border-radius: 5px;
+}
+.tooltip .arrow:before {
+  border-top-color: #333 !important;
+   }
+.tooltip .tooltip-inner {
+  background-color: #333;
+  font-size: 0.75rem;
+   }
+  /* tooltip end */
 
 /*---------------------------middle part end---------------------------------------------*/
 
