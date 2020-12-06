@@ -158,6 +158,10 @@ div.scroll {
   overflow-y: scroll;
 }
 
+.myModal3 {
+/* bug fix - no overlay */    
+display: none;}
+
 
 .ogender-show li:hover,
 .meal-show li:hover,
